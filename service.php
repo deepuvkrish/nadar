@@ -7,18 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/icons/icon_logo.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <link rel="stylesheet" href="css/css-plugins-call.css">
-        <link rel="stylesheet" href="css/bundle.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/colors.css">
+        <?php include 'include/header.php'; ?>
     </head>
     <body><!-- Body main wrapper start -->
         <div class="wrapper home-one single-product-page">
@@ -31,7 +20,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <nav class="woocommerce-breadcrumb">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                                 <span class="separator">/</span> Services
                             </nav>
                         </div>

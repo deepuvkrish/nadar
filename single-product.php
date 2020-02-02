@@ -27,9 +27,9 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <nav class="woocommerce-breadcrumb">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                                 <span class="separator">/</span>
-                                <a href="shop.html">Shop</a>
+                                <a href="shop.php">Shop</a>
                                 <span class="separator">/</span>
                                 <a href="#">Clothings</a>
                                 <span class="separator">/</span> Sit voluptatem

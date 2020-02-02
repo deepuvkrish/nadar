@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <nav class="woocommerce-breadcrumb">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                                 <span class="separator">/</span> Checkout
                             </nav>
                         </div>

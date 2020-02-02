@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <nav class="woocommerce-breadcrumb">
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                                 <span class="separator">/</span> No Sidebar
                             </nav>
                         </div>
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                     <div class="post-thumbnail">
-                                        <a href="single-blog.html"><img src="images/blog/blog1.jpg" alt="bege blog images"></a>
+                                        <a href="single-blog.php"><img src="images/blog/blog1.jpg" alt="bege blog images"></a>
                                     </div>
                                     <div class="postinfo-wrapper">
                                         <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor</p>
