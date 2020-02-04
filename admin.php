@@ -140,7 +140,7 @@
     <div class="login-box"  >   <!-- new modified log in box -->
                 <img src="images/student.png" class="avatar">
                 <h4 style="color:white">Admin LOGin</h4>
-                <form class="form-inline form-signin" align="center" autocomplete="off" action="admin" method="POST">
+                <form class="form-inline form-signin" align="center" autocomplete="off" action="newproduct.php" method="POST">
 
                 
                     <div style="position: relative;left: 14px;">
