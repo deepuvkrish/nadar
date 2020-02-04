@@ -8,20 +8,17 @@
 <style>
 
 
-    body{
-    margin: 0;
-    padding: 0;
+    body{  
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     background-color:#1c8adb;
-    top: 10%;   
     font-family: sans-serif;
-    background: url({{ asset('img/jecc.jpg') }});
+    background: url('images/back.jpg');
     }
    
-    .loginBtn {
+    .bt {
     box-sizing: border-box;
     position: relative;
     /* width: 13em;  - apply for fixed size */
@@ -51,31 +48,7 @@
     .loginBtn:active {
     box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
     }
-    /* Facebook */
-    .loginBtn--facebook {
-    background-color: #4C69BA;
-    background-image: linear-gradient(#4C69BA, #3B55A0);
-    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
-    text-shadow: 0 -1px 0 #354C8C;
-    }
-    .loginBtn--facebook:before {
-    border-right: #364e92 1px solid;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
-    }
-    .loginBtn--facebook:hover,
-    .loginBtn--facebook:focus {
-    background-color: #5B7BD5;
-    background-image: linear-gradient(#5B7BD5, #4864B1);
-    }
-    /* Google */
-    .loginBtn--google {
-    /*font-family: "Roboto", Roboto, arial, sans-serif;*/
-    background: #DD4B39;
-    }
-    .loginBtn--google:before {
-    border-right: #BB3F30 1px solid;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
-    }
+    
    
    
     .login-box{
@@ -87,7 +60,7 @@
     top: 40%;
     left: 50%;
     position: relative;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 22%);
     box-sizing: border-box;   
     padding: 70px 30px;     
     }
@@ -128,6 +101,8 @@
     height: 40px;
     color: #fff;
     font-size: 16px;
+    min-width:200px;
+    width:200px;
     
     }
 
@@ -142,20 +117,8 @@
     border-radius: 40px;
     
     
-    }
+    }  
 
-    img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 20px;
-    }   
-
-    .sm-menu a,.col a{
-    font-size:14px;
-    bottom:50%;
-    }
 
     #logo img {
     opacity: 0;
@@ -171,16 +134,16 @@
 </head>
 <body>
 
-<div class="wrapper home-one">
+<div class="container_fluid">
     <?php include 'include/adnav.php'; ?>
 
     <div class="login-box"  >   <!-- new modified log in box -->
-                <img src="{{ asset('img/student.png') }}" class="avatar">
-                <h4>Admin LOGin</h4>
+                <img src="images/student.png" class="avatar">
+                <h4 style="color:white">Admin LOGin</h4>
                 <form class="form-inline form-signin" align="center" autocomplete="off" action="admin" method="POST">
 
                 
-                    <div>
+                    <div style="position: relative;left: 14px;">
                     <i class="fas fa-user  faa-ring animated"></i>
                     <input type="text" class="form-control" name="username" id="username" autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="Username"><br>
                     </div>
@@ -190,7 +153,6 @@
                             autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="password"><br>
                     <input class="bt btn-large btn-primary" type="submit" name="save" id="save" value="Sign In">
                     </div>
-                    <h6>User sign in</h6>
 
                 </form>
     </div>
@@ -220,13 +182,6 @@
 <script src="js/main.js"></script>
 
 
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 </body>
 </html>
