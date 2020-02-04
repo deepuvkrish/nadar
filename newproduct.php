@@ -67,7 +67,71 @@
                                             <input type="file" class="form-control" name="file" id="l-name" >
                                         </div>
                                     </div>
-                                    
+                                   
+       
+        <div class="form-group">
+            <table class="table">
+                <tr>
+                    <td>category</td>
+                    <td>
+                        <select name="category">
+                            <option value="hs101">Household</option>
+                            <option value="vf102">Veggies</option>
+                            <option value="kt103">Kitchen</option>
+                            <option value="bv104">Beverages</option>
+                            <option value="bk105">Bakes</option>
+                            <option value="pt106">Pet food</option>
+                            <option value="gr107">Groceries</option>
+                            <option value="bh108">Beauty</option>
+                            <option value="sf109">Stationary</option>
+                        </select>
+                    </td>
+                    <tr>
+                        <td>Item Name</td>
+                        <td><input type='text' name='item_name' /></td>           
+                        <td>Item Code</td>
+                        <td><input type="text" name='item_code'/></td>
+                    </tr>
+                    <tr>
+                        <td>current Stock</td>
+                        <td><input type="text" name='crr_stk'/></td>
+                        <td>Booked Stock</td>
+                        <td><input type="text" name='bkd_stk'/></td>
+                    </tr>
+                    <tr>
+                        <td>Actual Price</td>
+                        <td><input type="text" name='act_prc'/></td>
+                        <td>Discount</td>
+                        <td><input type="text" name='discount' placeholder="%"/></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Upload Pic(max size 100kb)</td>
+                        <td><input type="file" name='image'/></td>
+                        </tr>
+                    </tr> -->
+                </tr>
+                <tr>           
+                    <td width="40%" align="right">
+                        <label>Select File for Upload</label>
+                    </td>
+                    <td width="30">
+                        <input type="file" name="select_file" />
+                    </td>
+
+                    <!-- <td width="30%" align="left">
+                        <input type="submit" name="upload" class="btn btn-primary" value="Upload">
+                    </td> -->
+                    <td colspan = '2'>
+                        <input type = 'submit' name="Add" value = "Add"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%" align="right"></td>
+                    <td width="30"><span class="text-muted">jpg, png, gif</span></td>
+                    <td width="30%" align="left"></td>
+                </tr>
+            </table>
+        </div>
                                 </fieldset>
                                
                                 <div class="terms">
