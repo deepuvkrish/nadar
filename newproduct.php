@@ -55,12 +55,7 @@
                                             <input type="text" class="form-control" name="name" id="f-name" placeholder="Item Name">
                                         </div>
                                     </div>
-                                    <div class="form-group d-md-flex align-items-md-center">
-                                        <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Item Code</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control" name="code" id="l-name" placeholder="Item Code">
-                                        </div>
-                                    </div>
+                                   
                                    
 
 
