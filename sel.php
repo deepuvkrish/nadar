@@ -11,24 +11,23 @@
        <?php include "include/header.php"; ?>
 
        <style>
-                        
 
-            ul {
+            .unlist {
             margin: 0;
             padding: 0;
             display: flex;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 71%);
             }
 
-            ul li {
+            .unlist li {
             list-style: none;
             margin: 0 15px;
             }
 
-            ul li a {
+            .unlist li a {
             position: relative; 
             display: block;
             width: 60px;
@@ -42,7 +41,7 @@
             transition: .5s;
             }
 
-            ul li a::before {
+            .unlist li a::before {
             content: '';
             position: absolute;
             top: 0;
@@ -56,12 +55,68 @@
             z-index: -1;
             }
 
-            ul li a:hover::before {
+            .unlist li a:hover::before {
             transform: scale(1.1);
             box-shadow: 0 0 15px #58dffd;
             }
 
-            ul li a:hover {
+            .unlist li a:hover {
+            color: #58dffd;
+            box-shadow: 0 0 5px #58dffd;
+            text-shadow: 0 0 5px #58dffd;
+            }
+                 
+                        
+
+            .ulis {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+            .ulis li {
+            list-style: none;
+            margin: 0 15px;
+            }
+
+            .ulis li a {
+            position: relative; 
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 63px;
+            background: #333;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #fff;
+            transition: .5s;
+            }
+
+            .ulis li a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #fff;
+            transition: .5s;
+            transform: scale(.9);
+            z-index: -1;
+            }
+
+            .ulis li a:hover::before {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #58dffd;
+            }
+
+            .ulis li a:hover {
             color: #58dffd;
             box-shadow: 0 0 5px #58dffd;
             text-shadow: 0 0 5px #58dffd;
@@ -101,7 +156,7 @@
                             
                             
 
-                                <ul>
+                                <ul class="ulis">
                                 <li>
                                     <a href="newproduct.php">
                                     <i class="fas fa-download"></i>
@@ -122,6 +177,29 @@
                                     <a href="admin.php">
                                     <i class="fas fa-running"></i>
                                     </a>Log out 
+                                </li>
+                                </ul>
+                                <ul class="unlist">
+                                <li>
+                                    <a href="newproduct.php">
+                                    <i class="fas fa-download"></i>
+                                    </a>SlideShow
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fas fa-trash-alt"></i>
+                                    </a>Hot Deals
+                                    </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fas fa-wrench"></i>
+                                     </a>xxx
+                                    
+                                </li>
+                                <li>
+                                    <a href="admin.php">
+                                    <i class="fas fa-running"></i>
+                                    </a>xxxx
                                 </li>
                                 </ul>
 

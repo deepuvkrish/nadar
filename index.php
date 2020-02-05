@@ -27,8 +27,9 @@
 								<!-- slider start -->
 								<div class="slider-inner">
 									<div id="mainSlider" class="nivoSlider nevo-slider">
-										<img src="images/slider/1.jpg" alt="main slider" title="#htmlcaption1"/>
-										<img src="images/slider/2.jpg" alt="main slider" title="#htmlcaption2"/>
+										<img src="images/slider/ca1.jpg" alt="main slider" title="#htmlcaption1"/>
+                                        <img src="images/slider/ca2.jpg" alt="main slider" title="#htmlcaption2"/>
+                                        <img src="images/slider/ca3.jpg" alt="main slider" title="#htmlcaption2"/>
 									</div>	
 									<div id="htmlcaption1" class="nivo-html-caption slider-caption">
 										<div class="slider-progress"></div>
@@ -45,6 +46,20 @@
 										</div>
 									</div>
 									<div id="htmlcaption2" class="nivo-html-caption slider-caption">
+										<div class="slider-progress"></div>
+										<div class="col-md-9">
+											<div class="slider-content slider-content-2 slider-animated-2">
+												<h1 class="hone">DRONE DIY</h1>
+												<h1 class="htwo">WORKSHOP</h1>
+												<h3 class="h3one">Build & Fly</h3>
+												<h3 class="h3two">Your Own drone!</h3>
+												<div class="button-1 hover-btn-1">
+													<a href="shop.html">SHOP NOW</a>
+												</div>
+											</div>
+										</div>					
+                                    </div>
+                                    <div id="htmlcaption3" class="nivo-html-caption slider-caption">
 										<div class="slider-progress"></div>
 										<div class="col-md-9">
 											<div class="slider-content slider-content-2 slider-animated-2">

@@ -118,7 +118,8 @@
                                 <div class="wrapper-inner-tab">
                                     <div class="wrapper-inner-tab-backgrounds">
                                         <div class="wrapper-inner-tab-backgrounds-third">
-                                            <div class="sim-button button28"><a href="admin.php"><span>Log out</span></a></div>
+                                            <div class="sim-button button28"><span><a href="admin.php">Log out</a></span></div>
+                                            <a href="admin.php">Log out</a>
                                         </div>
                                     </div>
                                 </div>
