@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/button.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -31,11 +32,11 @@
         <div class="wrapper home-one single-product-page">
          <?php include "include/adnav.php";?>
             <!-- Page title -->
-            <div class="entry-header">
+            <div class="entri-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="entry-title">Add new product</h1>
+                            <h1 class="entri-title">Add new product</h1>
                         </div>
                     </div>
                 </div>
@@ -111,8 +112,14 @@
                                
                                 <div class="terms">
                                     <div class="float-md-right">
-                                        
                                         <input type="submit" value="Continue" name="fileuploadsubmit1" class="return-customer-btn">
+                                    </div>
+                                </div>
+                                <div class="wrapper-inner-tab">
+                                    <div class="wrapper-inner-tab-backgrounds">
+                                        <div class="wrapper-inner-tab-backgrounds-third">
+                                            <div class="sim-button button28"><a href="admin.php"><span>Log out</span></a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>

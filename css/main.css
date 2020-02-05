@@ -4,7 +4,7 @@
 }
 
 .wrapper.home-one {
-    background: #f5f5f5 none repeat scroll 0 0;
+    /* background: #f5f5f5 none repeat scroll 0 0; */
 }
 
 .header-top-area {
@@ -2766,6 +2766,16 @@ li.megamenu-img a {
 .entry-header {
     margin: 0 0 50px;
     margin-top: 50px;
+}
+.entri-header .entri-title {
+    color: #000;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin: 0 0 50px;
+    margin-top: 50px; */
 }
 
 .entry-header .entry-title {
@@ -6188,7 +6198,7 @@ a:hover {
 ---------------------------------------------- */
 .register-page-area {
     background: #fff;
-    padding-top: 50px;
+    
 }
 
 .form-register label {
