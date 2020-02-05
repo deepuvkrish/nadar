@@ -1,5 +1,5 @@
  <!-- Brand logo area end -->
- <footer class="footer-area" style="position: relative;left: 0;bottom: 0;width: 100%;color: white;text-align: center;">
+ <footer class="footer-area" style="position: relative;left: 0;bottom: -290px;width: 100%;color: white;text-align: center;">
                 
                 
                 <div class="footer-copyright-area">

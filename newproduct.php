@@ -51,7 +51,6 @@
                                     <legend>Product Details</legend>
 
                                     <div class="form-group d-md-flex align-items-md-center">
-<<<<<<< HEAD
                                         <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Category</label>
                                         <div class="col-md-10">
                                             <select name="category">
@@ -67,16 +66,10 @@
                                             </select>
                                         </div>
                                     </div>
-=======
-                                        <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Item Name</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control" name="name" id="f-name" placeholder="Item Name">
-                                        </div>
-                                    </div>
+                                       
                                    
                                    
 
->>>>>>> 23d52cd6a2b94d5789c45589a1036401b5026bd7
 
                                     <div class="form-group d-md-flex align-items-md-center">
                                         <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Item Name</label>
