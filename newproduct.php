@@ -49,37 +49,31 @@
                             <form class="form-register" action="#" method="POST" enctype="multipart/form-data">
                                 <fieldset>
                                     <legend>Product Details</legend>
+
+                                    <div class="form-group d-md-flex align-items-md-center">
+                                        <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Category</label>
+                                        <div class="col-md-10">
+                                            <select name="category">
+                                                <option value="hs101">Household</option>
+                                                <option value="vf102">Veggies</option>
+                                                <option value="kt103">Kitchen</option>
+                                                <option value="bv104">Beverages</option>
+                                                <option value="bk105">Bakes</option>
+                                                <option value="pt106">Pet food</option>
+                                                <option value="gr107">Groceries</option>
+                                                <option value="bh108">Beauty</option>
+                                                <option value="sf109">Stationary</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group d-md-flex align-items-md-center">
                                         <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Item Name</label>
                                         <div class="col-md-10">
                                             <input type="text" class="form-control" name="name" id="f-name" placeholder="Item Name">
                                         </div>
                                     </div>
-                                    <div class="form-group d-md-flex align-items-md-center">
-                                        <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Item Code</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control" name="code" id="l-name" placeholder="Item Code">
-                                        </div>
-                                    </div>
-                                   
-
-
-                                    <div class="form-group d-md-flex align-items-md-center">
-                                        <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Category</label>
-                                        <div class="col-md-10">
-                                        <select name="category">
-                                            <option value="hs101">Household</option>
-                                            <option value="vf102">Veggies</option>
-                                            <option value="kt103">Kitchen</option>
-                                            <option value="bv104">Beverages</option>
-                                            <option value="bk105">Bakes</option>
-                                            <option value="pt106">Pet food</option>
-                                            <option value="gr107">Groceries</option>
-                                            <option value="bh108">Beauty</option>
-                                            <option value="sf109">Stationary</option>
-                                        </select>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="form-group d-md-flex align-items-md-center">
                                         <label class="control-label col-md-2" for="l-name"><span class="require">*</span>current Stock</label>
                                         <div class="col-md-10">
@@ -131,9 +125,15 @@
                                 $folder="upload/";
                                 $final_file=str_replace(' ','-',$file);
                                 if(move_uploaded_file($file_loc,$folder.$final_file)){
+                                    $cat = $_POST['category'];
+                                    echo $cat;
                                     $img = $_POST['name'];
-                                    $img1 = $_POST['code'];
-                                    $sql="INSERT INTO bh108(image,item_name,item_code) VALUES('$final_file','$img','$img1')";
+                                    $img1 = $_POST['crr_stk'];
+                                    $img2 = $_POST['bkd_stk'];
+                                    $img3 = $_POST['act_prc'];
+                                    $img4 = $_POST['discount'];
+                                    $img5 = ($img3 * (100-$img4))/100;
+                                    $sql="INSERT INTO $cat(image,item_name,Current_Stock,Booked_Stock,Act_Price,Discount,Final_Price) VALUES('$final_file','$img',$img1,$img2,$img3,$img4,$img5)";
                                     $rr=mysqli_query($conn,$sql);
                                     if($rr){
                                         echo "<script type='text/javascript'>alert('Successfully uploaded');</script>";
