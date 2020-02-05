@@ -1,6 +1,11 @@
 <?php
 
 //config.php
+$db_name = "nadar";
+$mysql_username = "root";
+$mysql_password = "";
+$server_name = "localhost";
+$conn = mysqli_connect($server_name, $mysql_username, $mysql_password, $db_name);
 
 //Include Google Client Library for PHP autoload file
 require_once 'vendor/autoload.php';

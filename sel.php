@@ -3,22 +3,73 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Bege || Register Page</title>
+        <title>Bege || Admin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/icons/icon_logo.png">
-        <!-- Place favicon.ico in the root directory -->
+       <?php include "include/header.php"; ?>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <link rel="stylesheet" href="css/css-plugins-call.css">
-        <link rel="stylesheet" href="css/bundle.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/colors.css">
+       <style>
+                        
+
+            ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+            ul li {
+            list-style: none;
+            margin: 0 15px;
+            }
+
+            ul li a {
+            position: relative; 
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 63px;
+            background: #333;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #fff;
+            transition: .5s;
+            }
+
+            ul li a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #fff;
+            transition: .5s;
+            transform: scale(.9);
+            z-index: -1;
+            }
+
+            ul li a:hover::before {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #58dffd;
+            }
+
+            ul li a:hover {
+            color: #58dffd;
+            box-shadow: 0 0 5px #58dffd;
+            text-shadow: 0 0 5px #58dffd;
+            }
+                    
+
+
+       </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -47,10 +98,32 @@
                     <div class="row">
                         <div class="col-sm-12">
                            
-                            <a href="newproduct.php">Insertion</a><br>
-                            <a href="">Deletion</a><br>
-                            <a href="">Updation</a>
+                            
+                            
 
+                                <ul>
+                                <li>
+                                    <a href="newproduct.php">
+                                    <i class="fas fa-download"></i>
+                                    </a>Insertion
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fas fa-trash-alt"></i>
+                                    </a>Deletion
+                                    </li>
+                                <li>
+                                    <a href="#">
+                                    <i class="fas fa-wrench"></i>
+                                     </a>Updation
+                                    
+                                </li>
+                                <li>
+                                    <a href="admin.php">
+                                    <i class="fas fa-running"></i>
+                                    </a>Log out 
+                                </li>
+                                </ul>
 
 
 
