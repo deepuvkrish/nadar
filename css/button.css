@@ -124,8 +124,7 @@ body {
 }
 .wrapper-inner-tab-backgrounds-first{
 	float: left;
-	height: 300px;
-	width: 33.33%;
+	width: 150px;
 	background-color: #feb41d;
 }
 .wrapper-inner-tab-backgrounds-second{

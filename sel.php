@@ -12,7 +12,7 @@
 
        <style>
 
-            .unlist {
+            .unlis {
             margin: 0;
             padding: 0;
             display: flex;
@@ -22,12 +22,12 @@
             transform: translate(-50%, 71%);
             }
 
-            .unlist li {
+            .unlis li {
             list-style: none;
             margin: 0 15px;
             }
 
-            .unlist li a {
+            .unlis li a {
             position: relative; 
             display: block;
             width: 60px;
@@ -41,7 +41,7 @@
             transition: .5s;
             }
 
-            .unlist li a::before {
+            .unlis li a::before {
             content: '';
             position: absolute;
             top: 0;
@@ -55,12 +55,12 @@
             z-index: -1;
             }
 
-            .unlist li a:hover::before {
+            .unlis li a:hover::before {
             transform: scale(1.1);
             box-shadow: 0 0 15px #58dffd;
             }
 
-            .unlist li a:hover {
+            .unlis li a:hover {
             color: #58dffd;
             box-shadow: 0 0 5px #58dffd;
             text-shadow: 0 0 5px #58dffd;
@@ -134,7 +134,7 @@
         <!-- Add your site or application content here -->
 
         <!-- Body main wrapper start -->
-        <div class="wrapper home-one single-product-page">
+        <div class="wrapper home-one single-product-page" style="min-height:600px">
          <?php include "include/adnav.php";?>
             <!-- Page title -->
             <div class="entry-header">
@@ -152,11 +152,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                           
-                            
-                            
-
-                                <ul class="ulis">
+                            <ul class="ulis">
                                 <li>
                                     <a href="newproduct.php">
                                     <i class="fas fa-download"></i>
@@ -178,22 +174,21 @@
                                     <i class="fas fa-running"></i>
                                     </a>Log out 
                                 </li>
-                                </ul>
-                                <ul class="unlist">
+                            <br>
                                 <li>
-                                    <a href="newproduct.php">
-                                    <i class="fas fa-download"></i>
+                                    <a href="sh2.php">
+                                    <i class="fas fa-camera"></i>
                                     </a>SlideShow
                                 </li>
                                 <li>
-                                    <a href="#">
-                                    <i class="fas fa-trash-alt"></i>
-                                    </a>Hot Deals
+                                    <a href="sh2">
+                                    <i class="fas fa-fire"></i>                                    
+                                </a>Hot Deals
                                     </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="sh2.php">
                                     <i class="fas fa-wrench"></i>
-                                     </a>xxx
+                                     </a>Latest
                                     
                                 </li>
                                 <li>
@@ -201,17 +196,29 @@
                                     <i class="fas fa-running"></i>
                                     </a>xxxx
                                 </li>
-                                </ul>
-
-
-
-
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-           <?php include "include/adfooter.php";?>
+            <footer class="footer-area" style="position: relative;padding:20% 0%;left: 0;bottom:0;width: 100%;color: white;text-align: center;">
+                
+                <div class="footer-copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 col-md-6">
+                                <p>Copyright © 2018 Bege . All Rights Reserved.</p>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 col-md-6 pull-right">
+                                <img src="images/icons/payment-icon.png" alt="payment icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer copyright area end -->
+            </footer>
         </div>
+        
         <!-- Body main wrapper end -->
 
 

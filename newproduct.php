@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Bege || Register Page</title>
+        <title>Nadar | Admin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -115,14 +115,25 @@
                                         <input type="submit" value="Continue" name="fileuploadsubmit1" class="return-customer-btn">
                                     </div>
                                 </div>
+                                
+
+                                <a href="sel.php">
+                                <div class="wrapper-inner-tab">
+                                    <div class="wrapper-inner-tab-backgrounds">
+                                        <div class="wrapper-inner-tab-backgrounds-first">
+                                            <div class="sim-button button30"><span>Main page</span></div>
+                                    </div>
+                                </div>
+                                </a>
+                                <a href="admin.php">
                                 <div class="wrapper-inner-tab">
                                     <div class="wrapper-inner-tab-backgrounds">
                                         <div class="wrapper-inner-tab-backgrounds-third">
-                                            <div class="sim-button button28"><span><a href="admin.php">Log out</a></span></div>
-                                            <a href="admin.php">Log out</a>
+                                            <div class="sim-button button28"><span>Log out</span></div>
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </form>
                            
 
