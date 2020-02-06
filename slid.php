@@ -16,7 +16,7 @@
                                     $rr=mysqli_query($conn,$sql);
                                     if($rr){
                                         echo "<script type='text/javascript'>alert('Successfully uploaded');</script>";
-                                        header("refresh:0;url=newproduct.php");
+                                        header("refresh:0;url=sh2.php");
                                     }
                                     else
                                         echo "Error";                                        
