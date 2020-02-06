@@ -47,9 +47,60 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <form class="form-register" action="aa.php" method="POST" enctype="multipart/form-data">
+                            
+                        <form class="form-register" action="#" method="POST" enctype="multipart/form-data">
+                                <fieldset>
+                                    <legend>Select categories</legend>
+
+                                    <div class="form-group d-md-flex align-items-md-center">
+                                        <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Category</label>
+                                        <div class="col-md-10">
+                                            <select name="category">
+                                                <option value="hs101">Household</option>
+                                                <option value="vf102">Veggies</option>
+                                                <option value="kt103">Kitchen</option>
+                                                <option value="bv104">Beverages</option>
+                                                <option value="bk105">Bakes</option>
+                                                <option value="pt106">Pet food</option>
+                                                <option value="gr107">Groceries</option>
+                                                <option value="bh108">Beauty</option>
+                                                <option value="sf109">Stationary</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
                                
-                                <div class="wrapper-inner-tab">
+                                <div class="terms">
+                                    <div class="float-md-right">
+                                        <input type="submit" value="Continue" name="fileuploadsubmit1" class="return-customer-btn">
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        <?php
+                         if(isset($_POST['fileuploadsubmit1'])){
+                            $cat = $_POST['category'];
+                            $db_name = "nadar";
+                            $mysql_username = "root";
+                            $mysql_password = "";
+                            $server_name = "localhost";
+                            $conn = mysqli_connect($server_name, $mysql_username, $mysql_password, $db_name);
+                            $sql = "SELECT * FROM $cat";
+                            $result = mysqli_query($conn,$sql);
+                            while($row = mysqli_fetch_array($result)) 
+                            {
+                                $txt = $row['image'];
+                                $txtl = $row['item_name'];
+                                echo "<img src='upload/$txt' width='175' height='200' />";
+                                echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$txtl."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+                                echo "<a href='bb.php?p1=$txt&&p2=$cat'><b>Delete</b></a><br>";
+                            }
+                        }
+
+                        ?>
+                       
+                       <div class="wrapper-inner-tab">
                                     <div class="wrapper-inner-tab-backgrounds">
                                         <div class="wrapper-inner-tab-backgrounds-third">
                                             <div class="sim-button button28"><span><a href="admin.php">Log out</a></span></div>
@@ -57,7 +108,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
+
+
                            
 
                         </div>
