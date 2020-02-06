@@ -57,7 +57,7 @@
                                                     <span class="require">*</span>1st Heading
                                                 </label>
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Definition">
+                                                    <input type="text" class="form-control" name="hd1" id="f-name" placeholder="Product Definition">
                                                 </div>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@
                                             <div class="form-group d-md-flex align-items-md-center">
                                                 <label class="control-label col-md-2" for="f-name"><span class="require">*</span>2nd Heading</label>
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Spec">
+                                                    <input type="text" class="form-control" name="hd2" id="f-name" placeholder="Product Spec">
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@
                                             <div class="form-group d-md-flex align-items-md-center">
                                                 <label class="control-label col-md-2" for="f-name"><span class="require">*</span>3rd Heading</label>
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Offer">
+                                                    <input type="text" class="form-control" name="hd3" id="f-name" placeholder="Product Offer">
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@
                                             <div class="form-group d-md-flex align-items-md-center">
                                                 <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Catchy Phrase</label>
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Slogan">
+                                                    <input type="text" class="form-control" name="hd4" id="f-name" placeholder="Product Slogan">
                                                 </div>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@
                                     <div class="form-group d-md-flex align-items-md-center">
                                         <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Choose 2nd image</label>
                                         <div class="col-md-10">
-                                            <input type="file" class="form-control" name="file" id="l-name" >
+                                            <input type="file" class="form-control" name="file1" id="l-name" >
                                         </div>
                                     </div>
                                     <div class="container">
@@ -102,7 +102,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>1st Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Definition">
+                                                        <input type="text" class="form-control" name="hd11" id="f-name" placeholder="Product Definition">
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>2nd Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Spec">
+                                                        <input type="text" class="form-control" name="hd12" id="f-name" placeholder="Product Spec">
                                                     </div>
                                                 </div>
                                             </div>
@@ -119,7 +119,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>3rd Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Offer">
+                                                        <input type="text" class="form-control" name="hd13" id="f-name" placeholder="Product Offer">
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,7 +127,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Catchy Phrase</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Slogan">
+                                                        <input type="text" class="form-control" name="hd14" id="f-name" placeholder="Product Slogan">
                                                     </div>
                                                 </div>
                                             </div>
@@ -140,7 +140,7 @@
                                     <div class="form-group d-md-flex align-items-md-center">
                                         <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Choose 3rd image</label>
                                         <div class="col-md-10">
-                                            <input type="file" class="form-control" name="file" id="l-name" >
+                                            <input type="file" class="form-control" name="file2" id="l-name" >
                                         </div>
                                     </div>
                                     <div class="container">
@@ -149,7 +149,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>1st Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Definition">
+                                                        <input type="text" class="form-control" name="hd111" id="f-name" placeholder="Product Definition">
                                                     </div>
                                                 </div>
                                             </div>
@@ -157,7 +157,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>2nd Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Spec">
+                                                        <input type="text" class="form-control" name="hd112" id="f-name" placeholder="Product Spec">
                                                     </div>
                                                 </div>
                                             </div>
@@ -166,7 +166,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>3rd Heading</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Offer">
+                                                        <input type="text" class="form-control" name="hd113" id="f-name" placeholder="Product Offer">
                                                     </div>
                                                 </div>
                                             </div>
@@ -174,7 +174,7 @@
                                                 <div class="form-group d-md-flex align-items-md-center">
                                                     <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Catchy Phrase</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="name" id="f-name" placeholder="Product Slogan">
+                                                        <input type="text" class="form-control" name="hd114" id="f-name" placeholder="Product Slogan">
                                                     </div>
                                                 </div>
                                             </div>
