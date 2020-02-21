@@ -391,7 +391,7 @@
                                                         <li><a href="shop.php">Ashirvad</a></li>
                                                         <li><a href="shop.php">Eastern</a></li>
                                                         <li><a href="shop.php">Nirapara</a></li>
-                                                        <li><a href="shop.php">Double Horse</a></li>
+                                                        <li><a href="shop.php">Double Horse  </a></li>
                                                     </ul>
                                                 </li>
                                                 <!-- Single Column End -->
