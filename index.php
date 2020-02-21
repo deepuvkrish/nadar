@@ -18,14 +18,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="slider-hidden col-lg-3">
-                        <div class="widget-title">
                             <div class="sidebar-product-categori">
+                                <div class="widget-title">
                                     <h3>PRODUCT CATEGORIES</h3>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="product-categories">
                                         <li class="cat-item">
-                                            <a href="#">Accessories</a>
+                                            <a href="#">Vegitables</a>
                                             <span class="count">(5)</span>
                                         </li>
                                         <li class="cat-item">
@@ -86,7 +86,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                         <div class="slider col-xl-9">
 						
