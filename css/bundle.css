@@ -396,7 +396,7 @@ input[type="reset"],
 input[type="submit"] {
     border: 1px solid;
     border-color: #ccc #ccc #bbb;
-    background: #e6e6e6;
+    background: #590375;;
     color: rgba(0, 0, 0, .8);
     font-size: 12px;
     font-size: 0.75rem;
@@ -725,12 +725,28 @@ input[type="submit"] {
     color: #626262;
     width: 100%;
     margin-bottom: 30px;
+
+    
 }
+
+input[type="texty"] {
+    
+    background-color: #ffffff00;
+    border: 1px solid #e5e5e5;
+    height: 26px;
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #35cbd2;
+    /* width: 100%; */
+    margin-bottom: 5px;
+}
+
 input[type="submit"] {
     width: auto;
-    padding: 0 30px;
-    background-color: #333333;
-    color: #fff;
+    padding: 0 11px;
+    background-color: #5f1357;
+    color: #f9fdf9;
     transition: .3s;
     cursor: pointer;
     border-color: #333333;

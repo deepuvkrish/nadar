@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2020 at 06:53 AM
+-- Generation Time: Feb 21, 2020 at 02:30 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -265,10 +265,12 @@ CREATE TABLE `tblproduct` (
 --
 
 INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
-(1, 'FinePix Pro2 3D Camera', '3DcAM01', 'product-images/camera.jpg', 1500.00),
-(2, 'EXP Portable Hard Drive', 'USB02', 'product-images/external-hard-drive.jpg', 800.00),
-(3, 'Luxury Ultra thin Wrist Watch', 'wristWear03', 'product-images/watch.jpg', 300.00),
-(4, 'XP 1155 Intel Core Laptop', 'LPN45', 'product-images/laptop.jpg', 800.00);
+(1, 'Carrot (ooty)', 'CAR', 'product-images/car.png', 37.00),
+(2, 'Tomato (bengal)', 'USB02', 'product-images/tomato.png', 80.00),
+(3, 'Potato (salem)', 'POT', 'product-images/poty.png', 50.00),
+(4, 'Cabbage (Koonor)', 'CAB', 'product-images/cab.png', 800.00),
+(5, 'Chilly (Kasmiri)', 'CHI', 'product-images/chi.png', 230.00),
+(6, 'Brinjal (Kerala)', 'BRIN', 'product-images/brin.png', 132.00);
 
 -- --------------------------------------------------------
 
@@ -428,7 +430,7 @@ ALTER TABLE `slider`
 -- AUTO_INCREMENT for table `tblproduct`
 --
 ALTER TABLE `tblproduct`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `vf102`

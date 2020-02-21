@@ -18,7 +18,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="slider-hidden col-lg-3">
-                            
+                            <div class="sidebar-product-categori">
+                                <div class="widget-title">
+                                    <h3>PRODUCT CATEGORIES</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <?php include "include/sidebar.php" ; ?>
+                                </div>
+                            </div>
                         </div>
                         <div class="slider col-xl-9">
 						

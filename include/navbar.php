@@ -244,174 +244,12 @@
                             <div class="col-xl-3 col-lg-3 hidden-md hidden-sm pull-left category-wrapper">
                                 <div class="categori-menu">
                                 <span class="categorie-title">Categories</span>
-                                <nav>
-                                    <ul class="categori-menu-list menu-hidden">
-                                        <li><a href="shop.php"><span><img src="images/icons/8.png" alt="menu-icon"></span>Fruits & Veggies<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <!-- categori Mega-Menu Start -->
-                                            <ul class="ht-dropdown megamenu first-megamenu">
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Top selling</li>
-                                                        <li><a href="shop.php">Tomato</a></li>
-                                                        <li><a href="shop.php">Onion</a></li>
-                                                        <li><a href="shop.php">Potato</a></li>
-                                                        <li><a href="shop.php">Beans</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Fruits</li>
-                                                        <li><a href="shop.php">Apple</a></li>
-                                                        <li><a href="shop.php">Mango</a></li>
-                                                        <li><a href="shop.php">Banana</a></li>
-                                                        <li><a href="shop.php">Grapes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Vegitables</li>
-                                                        <li><a href="shop.php">Cabbage</a></li>
-                                                        <li><a href="shop.php">Brinjal</a></li>
-                                                        <li><a href="shop.php">Ash Gourd</a></li>
-                                                        <li><a href="shop.php">Bitter Gourd</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                            </ul>
-                                            <!-- categori Mega-Menu End -->
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/bak.png" alt="menu-icon"></span>Baking<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <!-- categori Mega-Menu Start -->
-                                            <ul class="ht-dropdown megamenu megamenu-two">
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Hot Selling</li>
-                                                        <li><a href="shop.php">Lays</a></li>
-                                                        <li><a href="shop.php">Cupcakes</a></li>
-                                                        <li><a href="shop.php">Biscuits</a></li>
-                                                        <li><a href="shop.php">Rusk</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Bakes</li>
-                                                        <li><a href="shop.php">Homely</a></li>
-                                                        <li><a href="shop.php">Cakes</a></li>
-                                                        <li><a href="shop.php">Mixtures</a></li>
-                                                        <li><a href="shop.php">Bread & Buns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                            </ul>
-                                            <!-- categori Mega-Menu End -->
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/kio.png" alt="menu-icon"></span>Home & Kitchen<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <!-- categori Mega-Menu Start -->
-                                            <ul class="ht-dropdown megamenu megamenu-two">
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Handy Appliances</li>
-                                                        <li><a href="shop.php">Mixers</a></li>
-                                                        <li><a href="shop.php">Pans</a></li>
-                                                        <li><a href="shop.php">Stoves</a></li>
-                                                        <li><a href="shop.php">Buckets</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Small Appliances</li>
-                                                        <li><a href="shop.php">Knifes</a></li>
-                                                        <li><a href="shop.php">Spoons</a></li>
-                                                        <li><a href="shop.php">Plates</a></li>
-                                                        <li><a href="shop.php">Mats</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                            </ul>
-                                            <!-- categori Mega-Menu End -->
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/bea.png" alt="menu-icon"></span>Beauty Accesories<i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                                    </a>
-                                            <!-- categori Mega-Menu Start -->
-                                            <ul class="ht-dropdown megamenu megamenu-two">
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Gents</li>
-                                                        <li><a href="shop.php">Facewash</a></li>
-                                                        <li><a href="shop.php">Hair Gel</a></li>
-                                                        <li><a href="shop.php">Perfumes & Body spray</a></li>
-                                                        <li><a href="shop.php">Body & Face creams</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Ladies</li>
-                                                        <li><a href="shop.php">Lipsticks & Eye liners</a></li>
-                                                        <li><a href="shop.php">Perfumes & Foundations</a></li>
-                                                        <li><a href="shop.php">Bath & Shower</a></li>
-                                                        <li><a href="shop.php">Hair Care & Accesories</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                            </ul>
-                                            <!-- categori Mega-Menu End -->
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/gro.png" alt="menu-icon"></span>Groceries<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <!-- categori Mega-Menu Start -->
-                                            <ul class="ht-dropdown megamenu megamenu-two">
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Basic Shops</li>
-                                                        <li><a href="shop.php">Oils, Sauces</a></li>
-                                                        <li><a href="shop.php">Chilly, Turmeric, Coriander</a></li>
-                                                        <li><a href="shop.php">Musterd, Cumin, Salt </a></li>
-                                                        <li><a href="shop.php">Eastern Powders</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                                <!-- Single Column Start -->
-                                                <li class="single-megamenu">
-                                                    <ul>
-                                                        <li class="menu-tile">Wheat flour & Rice Items</li>
-                                                        <li><a href="shop.php">Ashirvad</a></li>
-                                                        <li><a href="shop.php">Eastern</a></li>
-                                                        <li><a href="shop.php">Nirapara</a></li>
-                                                        <li><a href="shop.php">Double Horse  </a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- Single Column End -->
-                                            </ul>
-                                            <!-- categori Mega-Menu End -->
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/bev.png" alt="menu-icon"></span>Beverages</a>
-                                        </li>
-                                        <li><a href="shop.php"><span><img src="images/icons/pet.png" alt="menu-icon"></span>Petfood</a>
-                                        </li>
-                                        <!-- <li><a href="shop.php"><span><img src="images/icons/8.png" alt="menu-icon"></span>Fruits & Veggies</a></li>
-                                        <li><a href="shop.php"><span><img src="images/icons/9.png" alt="menu-icon"></span>Computer & Laptop</a></li>
-                                        <li><a href="shop.php"><span><img src="images/icons/10.png" alt="menu-icon"></span>Meat & Seafood</a></li>
-                                        <li><a href="shop.php"><span><img src="images/icons/12.png" alt="menu-icon"></span>Samsung</a></li>
-                                        <li><a href="shop.php"><span><img src="images/icons/11.png" alt="menu-icon"></span>Sanyo</a></li> -->
-                                    </ul>
-                                </nav>
+                                
                             </div>
+                            
                             </div>
                             <div class="col-lg-9">
+                            
                                 <!-- main-menu -->
                                 <div class="main-menu">
                                     <nav>
@@ -459,6 +297,7 @@
                                         </ul>
                                     </nav>
                                 </div>
+                                
                                 <div class="mobile-menu-area">
                                     <div class="mobile-menu">
                                         <nav id="mobile-menu-active">
