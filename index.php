@@ -18,7 +18,75 @@
                 <div class="container">
                     <div class="row">
                         <div class="slider-hidden col-lg-3">
-                            
+                        <div class="widget-title">
+                            <div class="sidebar-product-categori">
+                                    <h3>PRODUCT CATEGORIES</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="product-categories">
+                                        <li class="cat-item">
+                                            <a href="#">Accessories</a>
+                                            <span class="count">(5)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Bedroom</a>
+                                            <span class="count">(4)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Decor &amp; Furniture</a>
+                                            <span class="count">(12)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Electronics &amp; Computer</a>
+                                            <span class="count">(13)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Fashion &amp; clothings</a>
+                                            <span class="count">(13)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Furniture</a>
+                                            <span class="count">(4)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Home, Garden &amp; Tools</a>
+                                            <span class="count">(14)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Laptops &amp; Desktops</a>
+                                            <span class="count">(7)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Livingroom</a>
+                                            <span class="count">(4)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Men</a>
+                                            <span class="count">(4)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Mobiles &amp; Tablets</a>
+                                            <span class="count">(6)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Sport &amp; Outdoors</a>
+                                            <span class="count">(7)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Toy, Kids &amp; Baby</a>
+                                            <span class="count">(7)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Uncategorized</a>
+                                            <span class="count">(0)</span>
+                                        </li>
+                                        <li class="cat-item">
+                                            <a href="#">Women</a>
+                                            <span class="count">(4)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
                         </div>
                         <div class="slider col-xl-9">
 						
