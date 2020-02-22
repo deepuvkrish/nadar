@@ -1,62 +1,33 @@
 <ul class="product-categories">
                                         <li class="cat-item">
-                                            <a href="shop.php">Vegitables</a>
-                                            <span class="count">(5)</span>
+                                            <a href="shop.php?p1=bh108">Vegitables</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Bedroom</a>
-                                            <span class="count">(4)</span>
+                                            <a href="shop.php?p1=bk105">Fruits</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Decor &amp; Furniture</a>
-                                            <span class="count">(12)</span>
+                                            <a href="shop.php?p1=bv104">Bakery</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Electronics &amp; Computer</a>
-                                            <span class="count">(13)</span>
+                                            <a href="shop.php?p1=gr107">Beverages</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Fashion &amp; clothings</a>
-                                            <span class="count">(13)</span>
+                                            <a href="shop.php?p1=hs101">Grossery</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Furniture</a>
-                                            <span class="count">(4)</span>
+                                            <a href="shop.php?p1=kt103">Cosmetics</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Home, Garden &amp; Tools</a>
-                                            <span class="count">(14)</span>
+                                            <a href="shop.php?p1=pt106">Stationary</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Laptops &amp; Desktops</a>
-                                            <span class="count">(7)</span>
+                                            <a href="shop.php?p1=sf109">Pet foods</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php">Livingroom</a>
-                                            <span class="count">(4)</span>
+                                            <a href="shop.php?p1=vf102">Household</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="#">Men</a>
-                                            <span class="count">(4)</span>
+                                            <a href="shop.php?p1=oth">others</a>
                                         </li>
-                                        <li class="cat-item">
-                                            <a href="#">Mobiles &amp; Tablets</a>
-                                            <span class="count">(6)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="#">Sport &amp; Outdoors</a>
-                                            <span class="count">(7)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="#">Toy, Kids &amp; Baby</a>
-                                            <span class="count">(7)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="#">Uncategorized</a>
-                                            <span class="count">(0)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="#">Women</a>
-                                            <span class="count">(4)</span>
-                                        </li>
+                                        
                                     </ul>
