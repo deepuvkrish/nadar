@@ -2,17 +2,18 @@
 session_start();
 require_once("dbcontroller.php");
 $db_handle = new DBController();
+if(!empty($_GET["p1"])) {
+    $table = $_GET["p1"];
+}
 if(!empty($_GET["action"])) {
 switch($_GET["action"]) {
 	case "add":
 		if(!empty($_POST["quantity"])) {
-			$productByCode = $db_handle->runQuery("SELECT * FROM bh108");
+			$productByCode = $db_handle->runQuery("SELECT * FROM $table WHERE item_name='" . $_GET["code"] . "'");
 			$itemArray = array($productByCode[0]["item_name"]=>array('item_name'=>$productByCode[0]["item_name"], 'Current_Stock'=>$productByCode[0]["Current_Stock"], 'quantity'=>$_POST["quantity"], 'Act_Price'=>$productByCode[0]["Act_Price"], 'image'=>$productByCode[0]["image"], 'Discount'=>$productByCode[0]["Discount"]));
 			
 			if(!empty($_SESSION["cart_item"])) {
-                echo "llllll";
 				if(in_array($productByCode[0]["item_name"],array_keys($_SESSION["cart_item"]))) {
-                    echo "qrty";
 					foreach($_SESSION["cart_item"] as $k => $v) {
 							if($productByCode[0]["item_name"] == $k) {
 								if(empty($_SESSION["cart_item"][$k]["quantity"])) {
@@ -23,13 +24,11 @@ switch($_GET["action"]) {
 					}
                 } 
                 else {
-                    echo "ssss";
                     $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
 				}
             } 
             else {
                 $_SESSION["cart_item"] = $itemArray;
-                echo "asdfgh";
 			}
 		}
 	break;
@@ -116,17 +115,16 @@ switch($_GET["action"]) {
                                             </tr>	
                                             <?php		
                                                 foreach ($_SESSION["cart_item"] as $item){
-                                                    
                                                     $item_price = $item["quantity"]*$item["Act_Price"];
                                             ?>
                                             <tr>
-                                                <td>	<img src="upload/<?php echo $item["image"]; ?>" class="cart-item-image" /> <?php echo $item["item_name"]; ?> </td> <?php echo $item["item_name"]; ?>                                                 
+                                                <td>	<img src="upload/<?php echo $item["image"]; ?>" class="cart-item-image" /> <?php echo $item["item_name"]; ?> </td>                         
                                                 <td>	<?php echo $item["item_name"]; ?>	</td>
                                                 <td style="text-align:right;">	<?php echo $item["quantity"]; ?>	</td>
                                                 <td  style="text-align:right;">	<?php echo "$ ".$item["Act_Price"]; ?>	</td>
                                                 <td  style="text-align:right;">	<?php echo "$ ". number_format($item_price,2); ?>	</td>
                                                 <td style="text-align:center;">
-                                                    <a href="shop.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction">
+                                                    <a href="shop.php?action=remove&code=<?php echo $item["item_name"]; ?>" class="btnRemoveAction">
                                                         <img src="icon-delete.png" alt="Remove Item" />
                                                     </a>
                                                 </td>
@@ -157,12 +155,12 @@ switch($_GET["action"]) {
                                 <div id="product-grid">
                                     <div class="txt-heading">Products</div>
                                     <?php
-                                    $product_array = $db_handle->runQuery("SELECT * FROM bh108");
+                                    $product_array = $db_handle->runQuery("SELECT * FROM $table");
                                     if (!empty($product_array)) { 
                                         foreach($product_array as $key=>$value){
                                     ?>
                                         <div class="product-item">
-                                            <form method="post" action="shop.php?action=add">
+                                            <form method="post" action="shop.php?action=add&p1=<?php echo $table ?>&code=<?php echo $product_array[$key]["item_name"]; ?>">
                                             <div class="product-image"><img src="upload/<?php echo $product_array[$key]["image"]; ?>" style="height: 140px; width: 140px; padding-left: 37px;" ></div>
                                             <div class="product-tile-footer">
                                             <div class="product-title" style="padding-left: 40px;"><?php echo $product_array[$key]["item_name"]; ?></div>
