@@ -27,7 +27,7 @@
                                             <a href="shop.php?p1=vf102">Household</a>
                                         </li>
                                         <li class="cat-item">
-                                            <a href="shop.php?p1=oth">others</a>
+                                            <a href="shop.php?p1=oth100">others</a>
                                         </li>
                                         
                                     </ul>

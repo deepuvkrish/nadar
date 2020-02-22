@@ -113,13 +113,7 @@
                                                     </li>
                                                 </ul>
                                             </div> -->
-                                            <!-- currency-menu -->
-                                            <div class="currency">
-                                                <a href="#">₹ INR<i class="ion-ios-arrow-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">€ EUR</a></li>
-                                                </ul>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +129,7 @@
                             <div class="col-xl-2 col-md-12">
                                 <!-- site-logo -->
                                 <div class="site-logo">
-                                    <a href="index.html"><img src="images/logo/logo.png" style="width:30%" alt="prince"></a>
+                                    <a href="index.php"><img src="images/logo/nadar.png" style="width:100%" alt="prince"></a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-md-12">
@@ -165,70 +159,15 @@
                                     <ul>
                                         <li><a href="#"><i class="ion-ios-shuffle-strong"></i></a></li>
                                         <li><a href="wishlist.php"><i class="ion-android-favorite-outline"></i></a></li>
-                                        <li><a href="#">
-                                            <span class="cart-icon">
-                                                <i class="ion-bag"></i><sup>3</sup>
-                                            </span>
+                                        <li><a href="cart.php">
+                                           
                                             <span class="cart-text">
-                                                <span class="cart-text-title">My cart <br> <strong>INR 145.00</strong> </span>
+                                                <span class="cart-text-title">My cart <br> 
+                                                    
+                                                </span>
                                             </span>
                                         </a>
-                                            <ul>
-                                                <li>
-                                                    <!-- single-shop-cart-wrapper -->
-                                                    <div class="single-shop-cart-wrapper">
-                                                        <div class="shop-cart-img">
-                                                            <a href="#"><img src="images/product/1.jpg" alt="Image of Product"></a>
-                                                        </div>
-                                                        <div class="shop-cart-info">
-                                                            <h5><a href="cart.php">sport t-shirt men</a></h5>
-                                                            <span class="price"> INR 515.00</span>
-                                                            <span class="quantaty">Qty: 1</span>
-                                                            <span class="cart-remove"><a href="#"><i class="fa fa-times"></i></a></span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <!-- single-shop-cart-wrapper -->
-                                                    <div class="single-shop-cart-wrapper">
-                                                        <div class="shop-cart-img">
-                                                            <a href="#"><img src="images/product/2.jpg" alt="Image of Product"></a>
-                                                        </div>
-                                                        <div class="shop-cart-info">
-                                                            <h5><a href="cart.php">sport coat amet</a></h5>
-                                                            <span class="price">INR 100.00</span>
-                                                            <span class="quantaty">Qty: 1</span>
-                                                            <span class="cart-remove"><a href="#"><i class="fa fa-times"></i></a></span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <!-- single-shop-cart-wrapper -->
-                                                    <div class="single-shop-cart-wrapper">
-                                                        <div class="shop-cart-img">
-                                                            <a href="#"><img src="images/product/3.jpg" alt="Image of Product"></a>
-                                                        </div>
-                                                        <div class="shop-cart-info">
-                                                            <h5><a href="cart.php">Pellentesque men</a></h5>
-                                                            <span class="price">INR 265.00</span>
-                                                            <span class="quantaty">Qty: 1</span>
-                                                            <span class="cart-remove"><a href="#"><i class="fa fa-times"></i></a></span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <!-- shop-cart-total -->
-                                                    <div class="shop-cart-total">
-                                                        <p>Subtotal: <span class="pull-right">INR 880.00</span></p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shop-cart-btn">
-                                                        <a href="checkout.php">Checkout</a>
-                                                        <a href="cart.php" class="pull-right">View Cart</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                            
                                         </li>
                                     </ul>
                                 </div>
@@ -242,10 +181,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-3 col-lg-3 hidden-md hidden-sm pull-left category-wrapper">
-                                <div class="categori-menu">
-                                <span class="categorie-title">Categories</span>
-                                
-                            </div>
+                               
                             
                             </div>
                             <div class="col-lg-9">

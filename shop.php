@@ -10,7 +10,7 @@ switch($_GET["action"]) {
 	case "add":
 		if(!empty($_POST["quantity"])) {
 			$productByCode = $db_handle->runQuery("SELECT * FROM $table WHERE item_name='" . $_GET["code"] . "'");
-			$itemArray = array($productByCode[0]["item_name"]=>array('item_name'=>$productByCode[0]["item_name"], 'Current_Stock'=>$productByCode[0]["Current_Stock"], 'quantity'=>$_POST["quantity"], 'Act_Price'=>$productByCode[0]["Act_Price"], 'image'=>$productByCode[0]["image"], 'Discount'=>$productByCode[0]["Discount"]));
+			$itemArray = array($productByCode[0]["item_name"]=>array('item_name'=>$productByCode[0]["item_name"], 'Current_Stock'=>$productByCode[0]["Current_Stock"], 'quantity'=>$_POST["quantity"], 'Act_Price'=>$productByCode[0]["Act_Price"],'Final_Price'=>$productByCode[0]["Final_Price"], 'image'=>$productByCode[0]["image"], 'Discount'=>$productByCode[0]["Discount"]));
 			
 			if(!empty($_SESSION["cart_item"])) {
 				if(in_array($productByCode[0]["item_name"],array_keys($_SESSION["cart_item"]))) {
@@ -48,12 +48,17 @@ switch($_GET["action"]) {
 }
 }
 ?>
+
+
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Bege || Shop</title>
+        <title> Nadar|| Shop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" type="text/css" rel="stylesheet" />
@@ -82,7 +87,7 @@ switch($_GET["action"]) {
                 <div class="shop-page-wraper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-md-3 sidebar-shop">
+                            <div class="col-xs-12 col-md-2 sidebar-shop">
                                 <div class="sidebar-product-categori">
                                     <div class="widget-title">
                                         <h3>PRODUCT CATEGORIES</h3>
@@ -93,11 +98,12 @@ switch($_GET["action"]) {
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-md-9 shop-content">
+                            <div class="col-xs-12 col-md-10 shop-content">
                                 <div id="shopping-cart">
                                     <div class="txt-heading">Shopping Cart</div>
 
-                                    <a id="btnEmpty" href="shop.php?action=empty">Empty Cart</a>
+                                    <a id="btnEmpty" href="shop.php?action=empty&p1=<?php echo $table;?>">Empty Cart</a>
+                                    
                                     <?php
                                     if(isset($_SESSION["cart_item"])){
                                         $total_quantity = 0;
@@ -115,33 +121,46 @@ switch($_GET["action"]) {
                                             </tr>	
                                             <?php		
                                                 foreach ($_SESSION["cart_item"] as $item){
-                                                    $item_price = $item["quantity"]*$item["Act_Price"];
+                                                    $item_price = $item["quantity"]*$item["Final_Price"];
                                             ?>
                                             <tr>
-                                                <td>	<img src="upload/<?php echo $item["image"]; ?>" class="cart-item-image" /> <?php echo $item["item_name"]; ?> </td>                         
-                                                <td>	<?php echo $item["item_name"]; ?>	</td>
-                                                <td style="text-align:right;">	<?php echo $item["quantity"]; ?>	</td>
-                                                <td  style="text-align:right;">	<?php echo "$ ".$item["Act_Price"]; ?>	</td>
-                                                <td  style="text-align:right;">	<?php echo "$ ". number_format($item_price,2); ?>	</td>
+                                                <td>	
+                                                    <img src="upload/<?php echo $item["image"]; ?>" class="cart-item-image" /> 
+                                                    <?php echo $item["item_name"]; ?> 
+                                                </td>                         
+                                                <td>	
+                                                    <?php echo $item["item_name"]; ?>	
+                                                </td>
+                                                <td style="text-align:right;">	
+                                                    <?php echo $item["quantity"]; ?>	
+                                                </td>
+                                                <td  style="text-align:right;">	
+                                                    <?php echo "₹ ".$item["Final_Price"]; ?>	
+                                                </td>
+                                                <td  style="text-align:right;">	
+                                                    <?php echo "₹ ". number_format($item_price,2); ?>	
+                                                </td>
                                                 <td style="text-align:center;">
-                                                    <a href="shop.php?action=remove&code=<?php echo $item["item_name"]; ?>" class="btnRemoveAction">
+                                                    <a href="shop.php?action=remove&p1=<?php echo $table;?>&code=<?php echo $item["item_name"]; ?>" class="btnRemoveAction">
                                                         <img src="icon-delete.png" alt="Remove Item" />
                                                     </a>
                                                 </td>
                                             </tr>
                                             <?php
                                                 $total_quantity += $item["quantity"];
-                                                $total_price += ($item["Act_Price"]*$item["quantity"]);
+                                                $total_price += ($item["Final_Price"]*$item["quantity"]);
                                                 }
                                             ?>
 
                                             <tr>
                                                 <td colspan="2" align="right">Total:</td>
                                                 <td align="right"><?php echo $total_quantity; ?></td>
-                                                <td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
+                                                <td align="right" colspan="2"><strong><?php echo "₹ ".number_format($total_price, 2); ?></strong></td>
                                                 <td></td>
                                             </tr>
+                                            
                                         </tbody>
+                                        <a id="btnEmpty" href="cart.php">Proceed to Checkout</a>
                                     </table>		
                                     <?php
                                         } else {
@@ -161,13 +180,17 @@ switch($_GET["action"]) {
                                     ?>
                                         <div class="product-item">
                                             <form method="post" action="shop.php?action=add&p1=<?php echo $table ?>&code=<?php echo $product_array[$key]["item_name"]; ?>">
-                                            <div class="product-image"><img src="upload/<?php echo $product_array[$key]["image"]; ?>" style="height: 140px; width: 140px; padding-left: 37px;" ></div>
+                                            <div class="product-image"><img src="upload/<?php echo $product_array[$key]["image"]; ?>" style="height: 140px; width: 140px;margin-left:10px" ></div>
                                             <div class="product-tile-footer">
-                                            <div class="product-title" style="padding-left: 40px;"><?php echo $product_array[$key]["item_name"]; ?></div>
-                                            <div class="product-price" style="padding-left: 40px;"><?php echo "$".$product_array[$key]["Final_Price"]; ?></div>
+                                            <div class="product-title"><?php echo $product_array[$key]["item_name"]; ?></div>
+                                            <div class="product-price act-price"><?php echo "₹".$product_array[$key]["Act_Price"]; ?></div>
+                                            <div class="product-price" style="padding-left: 4px;"><?php echo "₹".$product_array[$key]["Final_Price"]; ?></div>
+                                            <div class="product-price disc"><?php echo $product_array[$key]["Discount"]."%"; ?></div>
+                                            </div>
+                                            <div class="product-tile-footer">
                                             <div class="cart-action">
-                                                <input type="texty" class="product-quantity" name="quantity" value="1" size="2" />
-                                                <input type="submit" value="Add to Cart" class="btnAddAction" />
+                                                <div class="product-title"><input type="texty" class="product-quantity" name="quantity" value="1" size="2" />
+                                                <input type="submit" value="Add to Cart" class="btnAddAction" style="height: 24px;background:linear-gradient(to right, #51128a, #cc00ff);" /></div>
                                             </div>
                                             </div>
                                             </form>

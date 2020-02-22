@@ -5407,13 +5407,13 @@ element {}
     border-style: solid;
     border-width: 1px 0 0 1px;
     text-align: center;
-    width: 100%;
+    width: 60%;
 }
 
 .table-content table th {
     border-top: medium none;
     font-weight: normal;
-    padding: 20px 10px;
+    padding: 20px 23px;
     text-align: center;
     text-transform: capitalize;
     vertical-align: middle;

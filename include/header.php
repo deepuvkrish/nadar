@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/icons/icon_logo.png">
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo.png">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">

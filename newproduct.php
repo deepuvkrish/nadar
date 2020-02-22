@@ -55,15 +55,15 @@
                                         <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Category</label>
                                         <div class="col-md-10">
                                             <select name="category">
-                                                <option value="hs101">Household</option>
-                                                <option value="vf102">Veggies</option>
-                                                <option value="kt103">Kitchen</option>
-                                                <option value="bv104">Beverages</option>
+                                                <option value="vf102">Household</option>
+                                                <option value="bh108">Veggies</option>
+                                                <option value="bk105">Fruits</option>
+                                                <option value="gr107">Beverages</option>
                                                 <option value="bk105">Bakes</option>
-                                                <option value="pt106">Pet food</option>
-                                                <option value="gr107">Groceries</option>
-                                                <option value="bh108">Beauty</option>
-                                                <option value="sf109">Stationary</option>
+                                                <option value="sf109">Pet food</option>
+                                                <option value="hs101">Groceries</option>
+                                                <option value="kt103">Beauty</option>
+                                                <option value="pt106">Stationary</option>
                                             </select>
                                         </div>
                                     </div>
