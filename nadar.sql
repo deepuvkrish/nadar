@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2020 at 02:30 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Generation Time: Feb 22, 2020 at 08:33 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -44,10 +44,12 @@ CREATE TABLE `bh108` (
 --
 
 INSERT INTO `bh108` (`Sl.no`, `item_name`, `Current_Stock`, `Booked_Stock`, `Act_Price`, `Discount`, `Final_Price`, `image`) VALUES
-(24, 'dhanya', 46, 11, 90, 90, 9, '79589-Fantasy-Girl-PNG-Photos.png'),
 (25, 'aleena', 200, 11, 90, 11, 80, '3625-Fantasy-Angel-PNG-Image.png'),
 (26, 'aiswarya', 500, 9, 45, 12, 40, '3205-Fantasy-Girl-PNG-Clipart.png'),
-(27, 'anagha', 46, 12, 111, 90, 11, '70384-Fantasy-Girl-PNG-File.png');
+(27, 'anagha', 46, 12, 111, 90, 11, '70384-Fantasy-Girl-PNG-File.png'),
+(28, 'dhanya', 6, 5, 44, 56, 666, '79589-Fantasy-Girl-PNG-Photos.png'),
+(29, 'deepak', 0, 0, 0, 0, 0, '52613-student_PNG62534.png'),
+(30, 'raju', 99, 8, 77, 6, 67, '49395-Fantasy-Women-Warrior-PNG-Clipart.png');
 
 -- --------------------------------------------------------
 
@@ -376,7 +378,7 @@ ALTER TABLE `vf102`
 -- AUTO_INCREMENT for table `bh108`
 --
 ALTER TABLE `bh108`
-  MODIFY `Sl.no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `Sl.no` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `bk105`
